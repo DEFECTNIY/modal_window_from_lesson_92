@@ -1,0 +1,61 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+.body{
+  min-height: 200vh;
+}
+
+.body--fixed{
+overflow-y:hidden;
+}
+
+
+.btn--open{
+  width: 300px;
+  height: 100px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.madal{
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  opacity:0;
+  visibility: hidden;
+  align-items: center;
+  justify-content: center;
+  background: #000000c1;
+  transition: all 0.5s;
+}
+
+.madal--open{
+  opacity: 1;
+  visibility: visible;
+}
+
+.madal-window{
+  position:relative;
+  width:50vw;
+  min-height: 20vh;
+  padding: 50px 20px 20px 20px;
+  background-color: #ff6600;
+  border-radius: 30px; 
+}
+
+.madal__btn{
+  position: absolute;
+  top: 5px;
+  right:20px;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
